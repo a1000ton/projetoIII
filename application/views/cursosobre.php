@@ -43,6 +43,6 @@
 		</div>
 
         <script language="JavaScript">
-                var sess = document.getElementById('produtos');
+                var sess = document.getElementById('cursos');
                 sess.setAttribute("class", "active");
         </script>

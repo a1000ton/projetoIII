@@ -16,14 +16,14 @@
 							<a href="<?php echo base_url(); ?>">Início</a>
 						</li>
 						<li id="sobre">
-							<a href="<?php echo base_url(); ?>sobre">Sobre a Empresa</a>
+							<a href="<?php echo base_url(); ?>sobre">Sobre o Colégio</a>
 						</li>
-						<li class="has-submenu" id="produtos">
-							<a href="#">Produtos</a>
+						<li class="has-submenu" id="cursos">
+							<a href="#">Cursos</a>
 							<div class="mainmenu-submenu">
 								<div class="mainmenu-submenu-inner">
 									<div>
-                                        <h4><a href="<?php echo base_url(); ?>produtos">Todos produtos</a></h4>
+                                        <h4><a href="<?php echo base_url(); ?>cursos">Todos os cursos</a></h4>
 										<h6>
                                         <?php
                                             foreach($categorias as $cat){

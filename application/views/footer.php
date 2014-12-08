@@ -6,8 +6,8 @@
 		    			<h3>Navegar</h3>
 		    			<ul class="no-list-style footer-navigate-section">
 		    				<li><a href="<?php base_url(); ?>">Início</a></li>
-		    				<li><a href="<?php base_url(); ?>sobre">Sobre a Empresa</a></li>
-		    				<li><a href="<?php base_url(); ?>produtos">Produtos</a></li>
+		    				<li><a href="<?php base_url(); ?>sobre">Sobre a Escola</a></li>
+		    				<li><a href="<?php base_url(); ?>produtos">Cursos</a></li>
 		    				<li><a href="<?php base_url(); ?>contato">Contato</a></li>
 		    			</ul>
 		    		</div>

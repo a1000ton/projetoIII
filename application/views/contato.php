@@ -3,7 +3,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h1>Contact Us</h1>
+						<h1>Entre em Contato</h1>
 					</div>
 				</div>
 			</div>
@@ -20,17 +20,44 @@
 	        			<!-- End Map -->
 	        			<!-- Contact Info -->
 	        			<p class="contact-us-details">
-	        				<b>Address:</b> 123 Fake Street, LN1 2ST, London, United Kingdom<br/>
-	        				<b>Phone:</b> +44 123 654321<br/>
-	        				<b>Fax:</b> +44 123 654321<br/>
-	        				<b>Email:</b> <a href="mailto:getintoutch@yourcompanydomain.com">getintoutch@yourcompanydomain.com</a>
+	        				<b>Endereço:</b> 123 Fake Street, LN1 2ST, London, United Kingdom<br/>
+	        				<b>Telefone:</b> +44 123 654321<br/>
+	        				<b>E-mail:</b> <a href="mailto:getintoutch@yourcompanydomain.com">amiltonbjr@gmail.com</a>
 	        			</p>
 	        			<!-- End Contact Info -->
 	        		</div>
 	        		<div class="col-sm-5">
 	        			<!-- Contact Form -->
-	        			<h3>Send Us a Message</h3>
+	        			<h3>Fale conosco</h3>
 	        			<div class="contact-form-wrapper">
+
+                            <?php
+                                $atributos = array('class' => 'formlogin gradiente1 radius shadow', 'id' => 'formlogin');
+                                echo form_open(base_url().'administracao/restrito/login',$atributos);
+                                echo form_label('Nome', 'nome');
+                                $nome = array('name'=>'nome', 'class' => 'form-control', 'id'=>'Name');
+                                echo form_input($nome);
+
+                                echo form_label('E-mail', 'email');
+                                $email = array('name'=>'email', 'class'=>'form-control', 'id'=>'contact-email');
+                                echo form_input($email);
+
+                                echo form_label('Tópico', 'topico');
+                                $opcoes = array('duvida'=>'Dúvida', 'sugestao'=>'Sugestão', 'reclamacao'=>'Reclamação');
+                                $topico = array('name'=>'topico', 'class'=>'form-control', 'id'=>'prependedInput');
+                                echo form_dropdown('topicos', $opcoes).'<br>';
+
+
+                                echo form_label('Mensagem', 'mensagem');
+                                $mensagem = array('name'=>'mensagem', 'class'=>'form-control', 'id'=>'contact-message');
+                                echo form_textarea($mensagem).'<br>';
+
+                                $enviar = array('name'=>'btnSubmit', 'value'=>'Enviar', 'class'=>'btn pull-right');
+                                echo form_submit($enviar);
+                                echo form_fieldset_close();
+                                echo form_close();
+                            ?>
+
 		        			<form class="form-horizontal" role="form">
 		        				 <div class="form-group">
 		        				 	<label for="Name" class="col-sm-3 control-label"><b>Your name</b></label>

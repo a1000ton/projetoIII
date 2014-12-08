@@ -4,10 +4,10 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-        $data['categorias'] = $this->db->get('categorias')->result();
+        $dados['categorias'] = $this->db->get('categorias')->result();
 
 		$this->load->view('HTML_header');
-		$this->load->view('header', $data);
+		$this->load->view('header', $dados);
 		$this->load->view('inicio');
 		$this->load->view('footer');
 		$this->load->view('HTML_footer');
