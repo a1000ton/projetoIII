@@ -14,9 +14,10 @@
 
 		    		<div class="col-footer col-md-5 col-xs-6">
 		    			<h3>Contato</h3>
-		    			<p class="contact-us-details">
-	        				<b>Endereço:</b> Camboriú <br/>
-	        				<b>Celular:</b> +55 (47) 9914-2887<br/>
+                        <p class="contact-us-details">
+	        				<b>Endereço:</b> Rua Santa Terezinha, Bairro São Francisco de Assis, n 90<br/>
+                            <b>Localização</b> Camboriú, Santa Catarina <br/>
+	        				<b>Telefone:</b> (47) 9914-2887<br/>
 	        				<b>E-mail:</b> <a href="mailto:amiltonbjr@gmail.com">amiltonbjr@gmail.com</a>
 	        			</p>
 		    		</div>

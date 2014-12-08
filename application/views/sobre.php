@@ -3,7 +3,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>About Us</h1>
+						<h1>Sobre nós</h1>
 					</div>
 				</div>
 			</div>
@@ -13,11 +13,11 @@
 	    	<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
-						<h3>We are leading company</h3>
+						<h3>Quem somos</h3>
 						<p>
 							Donec elementum mi vitae enim fermentum lobortis. In hac habitasse platea dictumst. Ut pellentesque, orci sed mattis consequat, libero ante lacinia arcu, ac porta lacus urna in lorem. Praesent consectetur tristique augue, eget elementum diam suscipit id.
 						</p>
-						<h3>Wide range of services</h3>
+						<h3>O que buscamos</h3>
 						<p>
 							Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam condimentum laoreet sagittis. Duis quis ullamcorper leo. Suspendisse potenti.
 						</p>
@@ -31,32 +31,7 @@
 			</div>
 		</div>
 
-		<!-- Press Coverage -->
-        <div class="section">
-	    	<div class="container">
-	    		<h2>Featured on</h2>
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="in-press press-wired">
-							<a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="in-press press-mashable">
-							<a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="in-press press-techcrunch">
-							<a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
         <script language="JavaScript">
                 var sess = document.getElementById('sobre');
                 sess.setAttribute("class", "active");
         </script>
-		<!-- Press Coverage -->

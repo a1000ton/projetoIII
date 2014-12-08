@@ -14,15 +14,15 @@
 	        	<div class="row">
 	        		<div class="col-sm-7">
 	        			<!-- Map -->
-	        			<div id="contact-us-map">
-
-	        			</div>
+	        			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.329869757068!2d-48.634507500000055!3d-27.019740499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b67e5f7df8dd%3A0x668da8f288a7f3ff!2sR.+Santa+Terezinha%2C+Cambori%C3%BA+-+SC!5e0!3m2!1spt-BR!2sbr!4v1418050482505" width="652" height="300" frameborder="0" style="border:0"></iframe>
 	        			<!-- End Map -->
+
 	        			<!-- Contact Info -->
 	        			<p class="contact-us-details">
-	        				<b>Endereço:</b> 123 Fake Street, LN1 2ST, London, United Kingdom<br/>
-	        				<b>Telefone:</b> +44 123 654321<br/>
-	        				<b>E-mail:</b> <a href="mailto:getintoutch@yourcompanydomain.com">amiltonbjr@gmail.com</a>
+	        				<b>Endereço:</b> Rua Santa Terezinha, Bairro São Francisco de Assis, n 90<br/>
+                            <b>Localização</b> Camboriú, Santa Catarina </br>
+	        				<b>Telefone:</b> (47) 9914-2887<br/>
+	        				<b>E-mail:</b> <a href="mailto:amiltonbjr@gmail.com">amiltonbjr@gmail.com</a>
 	        			</p>
 	        			<!-- End Contact Info -->
 	        		</div>
@@ -42,58 +42,15 @@
                                 $email = array('name'=>'email', 'class'=>'form-control', 'id'=>'contact-email');
                                 echo form_input($email);
 
-                                echo form_label('Tópico', 'topico');
-                                $opcoes = array('duvida'=>'Dúvida', 'sugestao'=>'Sugestão', 'reclamacao'=>'Reclamação');
-                                $topico = array('name'=>'topico', 'class'=>'form-control', 'id'=>'prependedInput');
-                                echo form_dropdown('topicos', $opcoes).'<br>';
-
-
                                 echo form_label('Mensagem', 'mensagem');
                                 $mensagem = array('name'=>'mensagem', 'class'=>'form-control', 'id'=>'contact-message');
                                 echo form_textarea($mensagem).'<br>';
 
-                                $enviar = array('name'=>'btnSubmit', 'value'=>'Enviar', 'class'=>'btn pull-right');
+                                $enviar = array('name'=>'submit', 'value'=>'Enviar', 'class'=>'btn pull-right');
                                 echo form_submit($enviar);
                                 echo form_fieldset_close();
                                 echo form_close();
                             ?>
-
-		        			<form class="form-horizontal" role="form">
-		        				 <div class="form-group">
-		        				 	<label for="Name" class="col-sm-3 control-label"><b>Your name</b></label>
-		        				 	<div class="col-sm-9">
-										<input class="form-control" id="Name" type="text" placeholder="">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="contact-email" class="col-sm-3 control-label"><b>Your Email</b></label>
-									<div class="col-sm-9">
-										<input class="form-control" id="contact-email" type="text" placeholder="">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="contact-message" class="col-sm-3 control-label"><b>Select Topic</b></label>
-									<div class="col-sm-9">
-										<select class="form-control" id="prependedInput">
-											<option>Please select topic...</option>
-											<option>General</option>
-											<option>Services</option>
-											<option>Orders</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="contact-message" class="col-sm-3 control-label"><b>Message</b></label>
-									<div class="col-sm-9">
-										<textarea class="form-control" rows="5" id="contact-message"></textarea>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-12">
-										<button type="submit" class="btn pull-right">Send</button>
-									</div>
-								</div>
-		        			</form>
 		        		</div>
 		        		<!-- End Contact Info -->
 	        		</div>
