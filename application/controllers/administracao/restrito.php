@@ -26,8 +26,7 @@
                    'logado' => TRUE
                 );
                 $this->session->set_userdata($dados);
-                //redirect(base_url()."administracao/categorias");
-                redirect(base_url()."contato");
+                redirect(base_url()."administracao/cursos");
             }
             else{
                 redirect(base_url()."administracao/restrito");

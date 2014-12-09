@@ -11,22 +11,22 @@
 				<ul class="sequence-canvas">
 					<!-- Slide 1 -->
 					<li class="bg1">
-						<!-- Slide Title -->
-						<h2 class="title">Responsive</h2>
-						<!-- Slide Text -->
-						<h3 class="subtitle">It looks great on desktops, laptops, tablets and smartphones</h3>
-						<!-- Slide Image -->
-						<!--<img class="slide-img" src="<?php echo base_url(); ?>assets/comum/img/slider_home/slider1.jpg" alt="Slide 1" />-->
+                        <?php
+                            foreach($slides as $sli){
+                                echo "<h2 class='title'>".$sli->titulo."</h2>";
+                                echo "<h3 class='subtitle'>".$sli->descricao."</h3>";
+                            }
+                        ?>
 					</li>
 					<!-- End Slide 1 -->
 					<!-- Slide 2 -->
 					<li class="bg2">
-						<!-- Slide Title -->
-						<h2 class="title">Color Schemes</h2>
-						<!-- Slide Text -->
-						<h3 class="subtitle">Comes with 5 color schemes and it's easy to make your own!</h3>
-						<!-- Slide Image -->
-						<!--<img class="slide-img" src="<?php echo base_url(); ?>assets/comum/img/slider_home/slider2.jpg" alt="Slide 2" /> -->
+						<?php
+                            foreach($slides as $sli){
+                                echo "<h2 class='title'>".$sli->titulo2."</h2>";
+                                echo "<h3 class='subtitle'>".$sli->descricao2."</h3>";
+                            }
+                        ?>
 					</li>
 					<!-- End Slide 2 -->
 				</ul>
@@ -40,30 +40,6 @@
         </div>
         <!-- End Homepage Slider -->
 
-		<!-- Press Coverage -->
-        <div class="section">
-	    	<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="in-press press-wired">
-							<a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="in-press press-mashable">
-							<a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="in-press press-techcrunch">
-							<a href="#">Morbi eleifend congue elit nec sagittis. Praesent aliquam lobortis tellus, nec consequat vitae</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Press Coverage -->
-
 		<!-- Services -->
         <div class="section">
 	        <div class="container">
@@ -71,22 +47,34 @@
 	        		<div class="col-md-4 col-sm-6">
 	        			<div class="service-wrapper">
 		        			<img src="<?php base_url(); ?>assets/comum/img/servicos/diamond.png" alt="Service 1">
-		        			<h3>Aliquam in adipiscing</h3>
-		        			<p>Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis aliquet sit amet condimentum</p>
+                            <?php
+                                foreach($blocos as $blo){
+                                    echo "<h3>".$blo->titulo."</h3>";
+                                    echo "<p>".$blo->descricao."</p>";
+                                }
+                            ?>
 		        		</div>
 	        		</div>
 	        		<div class="col-md-4 col-sm-6">
 	        			<div class="service-wrapper">
 		        			<img src="<?php base_url(); ?>assets/comum/img/servicos/ruler.png" alt="Service 2">
-		        			<h3>Curabitur mollis</h3>
-		        			<p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci. Aenean lectus sapien, vehicula</p>
+		        			<?php
+                                foreach($blocos as $blo){
+                                    echo "<h3>".$blo->titulo2."</h3>";
+                                    echo "<p>".$blo->descricao2."</p>";
+                                }
+                            ?>
 		        		</div>
 	        		</div>
 	        		<div class="col-md-4 col-sm-6">
 	        			<div class="service-wrapper">
 		        			<img src="<?php base_url(); ?>assets/comum/img/servicos/box.png" alt="Service 3">
-		        			<h3>Vivamus mattis</h3>
-		        			<p>Phasellus posuere et nisl ac commodo. Nulla facilisi. Sed tincidunt bibendum cursus. Aenean vulputate aliquam risus rutrum scelerisque</p>
+		        			<?php
+                                foreach($blocos as $blo){
+                                    echo "<h3>".$blo->titulo3."</h3>";
+                                    echo "<p>".$blo->descricao3."</p>";
+                                }
+                            ?>
 		        		</div>
 	        		</div>
 	        	</div>
