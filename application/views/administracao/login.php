@@ -1,3 +1,7 @@
+<script language="JavaScript">
+    var tit = document.getElementById('titulo').innerHTML = "Colégio DEER - Restrito"; //Pega o TITLE e atribui um Valor
+</script>
+
 <div class="section">
 	    	<div class="container">
 				<div class="row">

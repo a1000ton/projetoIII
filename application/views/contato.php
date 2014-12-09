@@ -1,4 +1,10 @@
-      <!-- Page Title -->
+        <script language="JavaScript">
+            var sess = document.getElementById('contato').setAttribute("class", "active");
+
+            var tit = document.getElementById('titulo').innerHTML = "Colégio DEER - Contato"; //Pega o TITLE e atribui um Valor
+        </script>
+
+    <!-- Page Title -->
 		<div class="section section-breadcrumbs">
 			<div class="container">
 				<div class="row">
@@ -57,8 +63,3 @@
 	        	</div>
 	    	</div>
 	    </div>
-
-        <script language="JavaScript">
-                var sess = document.getElementById('contato');
-                sess.setAttribute("class", "active");
-        </script>

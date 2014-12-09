@@ -1,4 +1,11 @@
-        <!-- Homepage Slider -->
+
+        <script language="JavaScript">
+                var sess = document.getElementById('inicio').setAttribute("class", "active"); //Pega elemento da ABA e atribui a classe ATIVO
+
+                var tit = document.getElementById('titulo').innerHTML = "Colégio DEER - Início"; //Pega o TITLE e atribui um Valor
+        </script>
+
+    <!-- Homepage Slider -->
         <div class="homepage-slider">
         	<div id="sequence">
 				<ul class="sequence-canvas">
@@ -86,8 +93,3 @@
 	        </div>
 	    </div>
 	    <!-- End Services -->
-
-        <script language="JavaScript">
-                var sess = document.getElementById('inicio');
-                sess.setAttribute("class", "active");
-        </script>
