@@ -15,10 +15,14 @@
 		    		<div class="col-footer col-md-5 col-xs-6">
 		    			<h3>Contato</h3>
                         <p class="contact-us-details">
-	        				<b>Endereço:</b> Rua Santa Terezinha, Bairro São Francisco de Assis, n 90<br/>
-                            <b>Localização</b> Camboriú, Santa Catarina <br/>
-	        				<b>Telefone:</b> (47) 9914-2887<br/>
-	        				<b>E-mail:</b> <a href="mailto:amiltonbjr@gmail.com">amiltonbjr@gmail.com</a>
+                            <?php
+                                foreach ($empresa as $emp){
+                                    echo "<b>Endereço:</b> ".$emp->rua."<br/>";
+                                    echo "<b>Localização:</b> ".$emp->cidade."<br/>";
+                                    echo "<b>Telefone:</b> ".$emp->telefone."<br/>";
+                                    echo "<b>E-mail:</b><a href='mailto:amiltonbjr@gmail.com'> ".$emp->email."</a><br/>";
+                                }
+                            ?>
 	        			</p>
 		    		</div>
 		    		<div class="col-footer col-md-3 col-xs-6">
