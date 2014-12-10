@@ -17,7 +17,9 @@
                     <li id="cursos"><a href="<?php echo base_url(); ?>administracao/cursos"><i class="fa fa-table"></i> Cursos</a></li>
                     <li id="slides"><a href="<?php echo base_url(); ?>administracao/slides"><i class="fa fa-tasks"></i> Slides</a></li>
                     <li id="empresa"><a href="<?php echo base_url(); ?>administracao/empresa"><i class="fa fa-globe"></i> Empresa</a></li>
+                    <li id="blocos"><a href="<?php echo base_url(); ?>administracao/blocos"><i class="fa fa-bullseye"></i> Blocos</a></li>
                     <li id="sobre"><a href="<?php echo base_url(); ?>administracao/sobre"><i class="fa fa-font"></i> Sobre</a></li>
+
                     <li id="usuarios"><a href="<?php echo base_url(); ?>administracao/usuarios"><i class="fa fa-list-ol"></i> Usuários</a></li>
                 </ul>
             </div>

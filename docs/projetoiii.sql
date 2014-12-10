@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 09-Dez-2014 às 16:14
+-- Generation Time: 10-Dez-2014 às 15:30
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -32,15 +32,16 @@ CREATE TABLE IF NOT EXISTS `blocos` (
   `titulo3` text NOT NULL,
   `descricao` text NOT NULL,
   `descricao2` text NOT NULL,
-  `descricao3` text NOT NULL
+  `descricao3` text NOT NULL,
+  `id_bloco` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `blocos`
 --
 
-INSERT INTO `blocos` (`titulo`, `titulo2`, `titulo3`, `descricao`, `descricao2`, `descricao3`) VALUES
-('TITULO1', 'TITULO2', 'TITULO3', 'DESCRICAO1', 'desccricao2', 'descricao3');
+INSERT INTO `blocos` (`titulo`, `titulo2`, `titulo3`, `descricao`, `descricao2`, `descricao3`, `id_bloco`) VALUES
+('Muda tudo', 'Mudando', 'TITULO3', 'Muda muda', 'Tudodesccricao2', 'descricao3', 0);
 
 -- --------------------------------------------------------
 
@@ -91,6 +92,8 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
+('3c422dbaf122f9c40122df474127be58', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36', 1418208929, ''),
+('a1f571507d7ac2c31727428bf5ccf5af', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36', 1418215116, 'a:3:{s:9:"user_data";s:0:"";s:7:"usuario";s:3:"bmx";s:6:"logado";b:1;}'),
 ('bb6a6a8ecb4251a9b4a462156d533e66', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 1416442937, ''),
 ('c75d6ae83921534a07e4ce710cec64cf', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 1417037757, 'a:3:{s:9:"user_data";s:0:"";s:7:"usuario";s:10:"mestrecuca";s:6:"logado";b:1;}'),
 ('c773380ce9c21dfb3a3dabc17df93224', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 1416440739, '');
@@ -146,15 +149,16 @@ CREATE TABLE IF NOT EXISTS `slides` (
   `titulo` text NOT NULL,
   `descricao` text NOT NULL,
   `titulo2` text NOT NULL,
-  `descricao2` text NOT NULL
+  `descricao2` text NOT NULL,
+  `id_slide` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `slides`
 --
 
-INSERT INTO `slides` (`titulo`, `descricao`, `titulo2`, `descricao2`) VALUES
-('Título slide 01', 'Descricao detalhada slide 01 oba', 'Título slide 02', 'Descricao NEM TÃO DETALHADA ASSIM slide02');
+INSERT INTO `slides` (`titulo`, `descricao`, `titulo2`, `descricao2`, `id_slide`) VALUES
+('Puta', 'Coisa0', 'Chata', 'Cara', 0);
 
 -- --------------------------------------------------------
 
@@ -165,15 +169,16 @@ INSERT INTO `slides` (`titulo`, `descricao`, `titulo2`, `descricao2`) VALUES
 CREATE TABLE IF NOT EXISTS `sobre` (
   `titulo` text NOT NULL,
   `descricao` text NOT NULL,
-  `imagem` varchar(255) NOT NULL
+  `imagem` varchar(255) NOT NULL,
+  `id_sobre` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `sobre`
 --
 
-INSERT INTO `sobre` (`titulo`, `descricao`, `imagem`) VALUES
-('Teste título', 'Loren lipsu teste teste', 'http://wallpaper.ultradownloads.com.br/63017_Papel-de-Parede-Predio-e-o-ceu_1600x1200.jpg');
+INSERT INTO `sobre` (`titulo`, `descricao`, `imagem`, `id_sobre`) VALUES
+('Teste título sobre', 'Desculpa texto eu errei', 'http://wallpaper.ultradownloads.com.br/63017_Papel-de-Parede-Predio-e-o-ceu_1600x1200.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -188,14 +193,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `ativo` tinyint(1) NOT NULL DEFAULT '1',
   `cadastrado_em` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `usuario`, `senha`, `ativo`, `cadastrado_em`) VALUES
-(1, 'bmx', '123', 1, '2014-11-20 01:55:26');
+(1, 'bmx', '123', 1, '2014-11-20 01:55:26'),
+(2, 'teste', '123', 1, '2014-12-10 12:50:17');
 
 --
 -- Constraints for dumped tables
