@@ -14,14 +14,14 @@
                         foreach($sobre as $sob){
 
                             $atributos = array('class' => 'formlogin gradiente1 radius shadow', 'id' => 'formlogin');
-                            echo form_open(base_url().'administracao/restrito/login',$atributos);
+                            echo form_open(base_url().'administracao/sobre/editar/'.$sob->id_sobre,$atributos);
 
                             echo form_label('Título', 'titulo');
                             $titulo1 = array('name'=>'titulo', 'class' => 'form-control', 'value' => $sob->titulo);
                             echo form_input($titulo1);
 
-                            echo form_label('Texto', 'texto');
-                            $texto1 = array('name'=>'texto', 'class'=>'form-control', 'value' => $sob->descricao);
+                            echo form_label('Texto', 'descricao');
+                            $texto1 = array('name'=>'descricao', 'class'=>'form-control', 'value' => $sob->descricao);
                             echo form_textarea($texto1);
 
                             echo form_label('Imagem', 'imagem');
