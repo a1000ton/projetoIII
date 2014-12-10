@@ -8,9 +8,11 @@
         }
 
         public function index(){
+            $dados['sobre'] = $this->db->get('sobre')->result();
+
             $this->load->view('administracao/HTML_header');
             $this->load->view('administracao/menu');
-            $this->load->view('administracao/corposobre');
+            $this->load->view('administracao/corposobre', $dados);
             $this->load->view('administracao/HTML_footer');
         }
     }

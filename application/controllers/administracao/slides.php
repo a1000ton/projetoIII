@@ -8,9 +8,11 @@
         }
 
         public function index(){
+            $data['slides'] = $this->db->get('slides')->result();
+
             $this->load->view('administracao/HTML_header');
             $this->load->view('administracao/menu');
-            $this->load->view('administracao/corposlide');
+            $this->load->view('administracao/corposlide', $data);
             $this->load->view('administracao/HTML_footer');
         }
     }

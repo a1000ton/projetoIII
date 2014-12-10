@@ -1687,7 +1687,7 @@ output {
   padding: 8px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #BDBDBD;
+  color: #424242;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #282828;
@@ -6276,3 +6276,64 @@ table.tablesorter thead tr th:hover {
                     right: auto;
                 }
         }
+
+.btn-novo{
+    background-color: #424242;
+    color: #fff;
+}
+
+.btn-novo:hover{
+    background-color: #2d2d2d;
+}
+
+.imagemsobre{
+    width: 500px;
+    height: 250px;
+}
+
+.tabelanova{
+    width: 100%;
+    height: 90px;
+}
+
+.bodytable{
+    padding-left: 5px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.headtable{
+    border-bottom: 2px solid #2A9FD6;
+    text-align: center;
+    font-weight: bold;;
+}
+
+.special{
+    background-color: #e1e1e1;
+    padding: none;
+    text-align: center;
+}
+
+.special:hover{
+    background-color: grey;
+}
+
+.icontable{
+    width: 20px;
+    height: 20px;
+}
+
+.btn-voltar{
+
+    float: right;
+}
+
+.nop{
+    color: white;
+}
+
+.nop:hover{
+    text-decoration: none;
+    color: white;
+}
