@@ -8,7 +8,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Portfolio - 3 Columns (Option 1)</h1>
+						<h1>Nossos Cursos</h1>
 					</div>
 				</div>
 			</div>
@@ -28,7 +28,6 @@
                                         echo "<ul>";
                                             echo "<li class='portfolio-project-name'>$cur->curso</li>";
                                             echo "<li>$cur->descricao</li>";
-                                            echo "<li class='read-more'><a href='#' class='btn'>Leia mais</a>";
                                         echo "</ul>";
                                     echo "</div>";
                                 echo "</div>";

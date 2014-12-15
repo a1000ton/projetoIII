@@ -20,7 +20,7 @@
 	        	<div class="row">
 	        		<div class="col-sm-5">
 	        			<!-- Map -->
-	        			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.329869757068!2d-48.634507500000055!3d-27.019740499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b67e5f7df8dd%3A0x668da8f288a7f3ff!2sR.+Santa+Terezinha%2C+Cambori%C3%BA+-+SC!5e0!3m2!1spt-BR!2sbr!4v1418050482505" width="652" height="300" frameborder="0" style="border:0"></iframe>
+	        			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.329869757068!2d-48.634507500000055!3d-27.019740499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b67e5f7df8dd%3A0x668da8f288a7f3ff!2sR.+Santa+Terezinha%2C+Cambori%C3%BA+-+SC!5e0!3m2!1spt-BR!2sbr!4v1418050482505" width="400" height="300" frameborder="0" style="border:0"></iframe>
 	        			<!-- End Map -->
 
 	        			<!-- Contact Info -->

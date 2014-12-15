@@ -21,9 +21,6 @@
 						<li id="cursos">
                             <a href="<?php echo base_url(); ?>cursos">Cursos</a>
                         </li>
-                        <li id="blog">
-                            <a href="<?php echo base_url(); ?>cursos">Blog</a>
-                        </li>
                         <li id="contato">
 							<a href="<?php echo base_url(); ?>contato">Contato</a>
 						</li>
